@@ -11,6 +11,7 @@ Båda projekten behöver denna dependency i pom.xml:
 		<version>1.0</version>
 	</dependency>
 ```
+Kom ihåg att köra "Maven Update" (högerklick-menyn) efter du lagt till dependencyn.
 
 Bygg en webservice som returnerar en `List<Match>` med godtyckligt (hårdkodat eller slumpat) innehåll. Kolla på GrossistApplication och ArticleListService i grossist-projektet.
 
