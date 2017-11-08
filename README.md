@@ -13,7 +13,7 @@ Båda projekten behöver denna dependency i pom.xml:
 ```
 Kom ihåg att köra "Maven Update" (högerklick-menyn) efter du lagt till dependencyn.
 
-Bygg en webservice som returnerar en `List<Match>` med godtyckligt (hårdkodat eller slumpat) innehåll. Kolla på GrossistApplication och ArticleListService i grossist-projektet.
+Bygg en webservice som returnerar en `List<Match>` med godtyckligt (hårdkodat eller slumpat) innehåll. Kolla på GrossistApplication och ArticleRSService i grossist-projektet.
 
 
 Bygg sedan en till webapplikation som gör anrop mot sportsing-webservicen och visar på en websida. JSF + CDI-backing bean (som använder en JAX-RS-klient för att prata med webservicen, jämför updateIngredientCosts() i jpakonditori BakeryBean).
