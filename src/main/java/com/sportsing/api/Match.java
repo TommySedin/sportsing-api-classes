@@ -42,7 +42,10 @@ public class Match {
 		registerContender(new ContenderResult(name, score, place));
 	}
 
-	public Iterator<ContenderResult> getContenderIterator() {
-		return contenders.iterator();
+	public String getSport() {
+		return sport;
+	}
+	public List<ContenderResult> getContenders() {
+		return contenders;
 	}
 }
