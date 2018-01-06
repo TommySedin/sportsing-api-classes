@@ -14,15 +14,17 @@ import javax.xml.bind.annotation.XmlRootElement;
 /*
  * Beskriver en match.
  * sport: Vilken sport det handlar om
- * contenders: En lista med resultat för varje deltagare
+ * contenders: En lista med resultat fï¿½r varje deltagare
  * 
- *  registerContender(): Används på serversidan för att lägga till ContenderResults
- *  getContenderIterator(): Används på klientsidan för att accessa listan med ContenderResults
+ *  registerContender(): Anvï¿½nds pï¿½ serversidan fï¿½r att lï¿½gga till ContenderResults
+ *  getContenderIterator(): Anvï¿½nds pï¿½ klientsidan fï¿½r att accessa listan med ContenderResults
  */
 
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Match {
+	@XmlElement
+	private int id;
 	@XmlElement
 	private String sport;
 
@@ -31,7 +33,8 @@ public class Match {
 	private List<ContenderResult> contenders;
 
 	public Match() {}
-	public Match(String sport) {
+	public Match(int id, String sport) {
+		this.id = id;
 		this.sport = sport;
 		contenders = new ArrayList<ContenderResult>();
 	}
@@ -42,10 +45,8 @@ public class Match {
 		registerContender(new ContenderResult(name, score, place));
 	}
 
-	public String getSport() {
-		return sport;
-	}
-	public List<ContenderResult> getContenders() {
-		return contenders;
-	}
+	public int getId() { return id; }
+	public String getSport() { return sport; }
+	public void setSport(String sport) { this.sport = sport; }
+	public List<ContenderResult> getContenders() { return contenders; }
 }

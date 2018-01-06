@@ -8,7 +8,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 /*
  * Beskriver en deltagares (individ eller lag) resultat i en match.
  * name: Deltagarens namn
- * score: Deltagarens "po‰ng" (antal mÂl, tid, e.dyl)
+ * score: Deltagarens "po√§ng" (antal m√•l, tid, e.dyl)
  * place: Deltagarens placering
  */
 
